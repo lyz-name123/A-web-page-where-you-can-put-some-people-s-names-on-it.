@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <style>
+        #hiddenContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>文柏然生日快乐</h1>
+    <button onclick="showHiddenContent()">显示隐藏内容</button>
+    <div id="hiddenContent">
+        <h2>张博熙</h2>
+    </div>
+
+    <script>
+        function showHiddenContent() {
+            const username = prompt("请输入用户名：");
+            const password = prompt("请输入密码：");
+
+            if (username === "yincang" && password === "yc3926") {
+                document.getElementById("hiddenContent").style.display = "block";
+            } else {
+                alert("用户名或密码错误！");
+            }
+        }
+    </script>
+</body>
+</html>
